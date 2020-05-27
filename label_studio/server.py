@@ -451,7 +451,8 @@ def api_import():
     # tasks are all in one file, append it
     path = project.config['input_path']
     old_tasks = json.load(open(path))
-    max_id_in_old_tasks = int(max(old_tasks.keys())) if old_tasks else -1
+    max_id_in_old_tasks = int(max(map(int, old_tasks.keys()))) if old_tasks else -1
+
     new_tasks = Tasks().from_list_of_dicts(new_tasks, max_id_in_old_tasks + 1)
     old_tasks.update(new_tasks)
 
