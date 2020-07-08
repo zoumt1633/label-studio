@@ -1,0 +1,34 @@
+{
+  "title": "Label Studio",
+  "host": "0.0.0.0",
+  "port": 8080,
+  "debug": false,
+  "label_config": "/Users/mac/PycharmProjects/label-studio/labeling_project/config.xml",
+  "input_path": "/Users/mac/PycharmProjects/label-studio/labeling_project/tasks.json",
+  "output_dir": "/Users/mac/PycharmProjects/label-studio/labeling_project/completions",
+  "instruction": "Type some <b>hypertext</b> for label experts!",
+  "allow_delete_completions": true,
+  "templates_dir": "examples",
+  "editor": {
+    "debug": false
+  },
+  "sampling": "sequential",
+  "ml_backends": [
+    {
+      "url": "http://localhost:9090",
+      "name": "labeling_projecte2e1"
+    }
+  ],
+  "source": {
+    "name": "Tasks",
+    "type": "tasks-json",
+    "path": "/Users/mac/PycharmProjects/label-studio/labeling_project/tasks.json"
+  },
+  "target": {
+    "name": "Completions",
+    "type": "completions-dir",
+    "path": "/Users/mac/PycharmProjects/label-studio/labeling_project/completions"
+  },
+  "config_path": "/Users/mac/PycharmProjects/label-studio/labeling_project/config.json",
+  "label_config_updated": true
+}

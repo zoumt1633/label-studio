@@ -49,3 +49,4 @@ build/static/media/config.*.xml
 label_studio.egg-info/
 my_project/
 label-studio-projects
+/venv/

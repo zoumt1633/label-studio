@@ -1,0 +1,14 @@
+{
+  "5": {
+    "id": 5,
+    "data": {
+      "image": "http://localhost:8080/static/samples/sample.jpg"
+    }
+  },
+  "6": {
+    "id": 6,
+    "data": {
+      "image": "http://localhost:8080/static/samples/sample.jpg"
+    }
+  }
+}
