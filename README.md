@@ -40,6 +40,12 @@ label-studio init labeling_project
 
 # Start the server at http://localhost:8080
 label-studio start labeling_project
+
+# model init
+label-studio-ml init object_detection --script ./label_studio/ml/examples/object_detection.py
+
+# model start at http://localhost:9090
+label-studio-ml start object_detection
 ```
 
 #### Install on Windows
